@@ -84,9 +84,9 @@
             // 
             // button2
             // 
-            button2.Location = new Point(12, 15);
+            button2.Location = new Point(12, 12);
             button2.Name = "button2";
-            button2.Size = new Size(376, 29);
+            button2.Size = new Size(376, 32);
             button2.TabIndex = 4;
             button2.Text = "Задание";
             button2.UseVisualStyleBackColor = true;
@@ -96,7 +96,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(417, 194);
+            ClientSize = new Size(395, 197);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(label2);
