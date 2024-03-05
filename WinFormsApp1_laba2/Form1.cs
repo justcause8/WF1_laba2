@@ -88,6 +88,7 @@ namespace WinFormsApp1_laba2
             }
         }
 
+        // добавление перехода между элементами через enter
         private void button2_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Дан прямоугольник с размерами a × b. От него отрезают квадраты максимального размера, пока это возможно. " +
