@@ -34,6 +34,7 @@
             label2 = new Label();
             button1 = new Button();
             button2 = new Button();
+            clear = new Button();
             SuspendLayout();
             // 
             // width
@@ -86,17 +87,29 @@
             // 
             button2.Location = new Point(12, 12);
             button2.Name = "button2";
-            button2.Size = new Size(376, 32);
+            button2.Size = new Size(190, 32);
             button2.TabIndex = 4;
             button2.Text = "Задание";
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
+            // clear
+            // 
+            clear.Location = new Point(223, 12);
+            clear.Name = "clear";
+            clear.Size = new Size(165, 31);
+            clear.TabIndex = 5;
+            clear.Text = "Очистка";
+            clear.UseVisualStyleBackColor = true;
+            clear.Click += button3_Click;
+            clear.KeyUp += Ctrl_KeyUp;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(395, 197);
+            ClientSize = new Size(402, 203);
+            Controls.Add(clear);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(label2);
@@ -117,5 +130,6 @@
         private Label label2;
         private Button button1;
         private Button button2;
+        private Button clear;
     }
 }

@@ -88,12 +88,27 @@ namespace WinFormsApp1_laba2
             }
         }
 
-        
+
         private void button2_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Дан прямоугольник с размерами a × b. От него отрезают квадраты максимального размера, пока это возможно. " +
                 "Затем от оставшегося прямоугольника вновь отрезают квадраты максимально возможного размера и т. д. " +
                 "На какие квадраты и в каком их количестве будет разрезан исходный прямоугольник?");
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            string inputWidht = width.Text; // Считываем значение из текстового поля width
+            string inputHeight = height.Text; // Считываем значение из текстового поля height
+
+            // Сохраняем значения в настройки приложения
+            Properties.Settings.Default.widht = inputWidht;
+            Properties.Settings.Default.height = inputHeight;
+            Properties.Settings.Default.Save(); // Сохраняем настройки
+
+            // Очищаем текстовые поля
+            width.Clear();
+            height.Clear();
         }
     }
 }
